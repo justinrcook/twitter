@@ -2,11 +2,8 @@
   = f.error_notification
 
   .form-inputs
-    = f.association :user
-    = f.input :username
-    = f.input :name
-    = f.input :avatar
-    = f.input :last_checked
+    = f.input :username, :label => "Twitter Username/Handle"
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, :class => 'btn-primary'
+    = link_to 'Cancel', '#', :class => 'btn'
