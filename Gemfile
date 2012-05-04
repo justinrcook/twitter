@@ -15,6 +15,7 @@ gem "will_paginate", ">= 3.0.3"
 gem "therubyracer", :group => :assets, :platform => :ruby
 gem "simple_form"
 gem "devise"
+gem "twitter"
 
 group :development do
 	gem 'nifty-generators'
