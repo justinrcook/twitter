@@ -25,5 +25,7 @@
 					.row
 						.span12
 							= render 'layouts/messages'
+							- if show_title?
+								%h2= yield(:title)
 							= yield
 					%footer
