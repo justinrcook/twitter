@@ -1,27 +1,23 @@
-%h1 Listing people
+- title "People"
 
 %table
-  %tr
-    %th User
-    %th Username
-    %th Name
-    %th Avatar
-    %th Last checked
-    %th
-    %th
-    %th
+	%thead
+		%tr
+			%th Username
+			%th Name
+			%th Location
+			%th Last checked
+			%th{ :colspan => 2 }
 
-  - @people.each do |person|
-    %tr
-      %td= person.user
-      %td= person.username
-      %td= person.name
-      %td= person.avatar
-      %td= person.last_checked
-      %td= link_to 'Show', person
-      %td= link_to 'Edit', edit_person_path(person)
-      %td= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete
+	%tbody
+	- @people.each do |person|
+		%tr
+			%td= link_to(person.username, person)
+			%td= person.name
+			%td= person.location
+			%td= person.last_checked
+			%td= link_to 'Edit', edit_person_path(person)
+			%td= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete
 
-%br
-
-= link_to 'New Person', new_person_path
+%p
+	= link_to 'New Person', new_person_path
