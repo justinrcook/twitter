@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.3'
-gem 'sqlite3'
+gem 'mysql2'
 gem 'json'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -15,3 +15,7 @@ gem "will_paginate", ">= 3.0.3"
 gem "therubyracer", :group => :assets, :platform => :ruby
 gem "simple_form"
 gem "devise"
+
+group :development do
+	gem 'nifty-generators'
+end
