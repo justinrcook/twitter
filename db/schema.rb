@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(:version => 20120504192752) do
     t.integer  "user_id"
     t.string   "username"
     t.string   "name"
+    t.string   "description"
+    t.string   "location"
     t.string   "avatar"
     t.datetime "last_checked"
     t.datetime "created_at",   :null => false
