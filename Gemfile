@@ -14,3 +14,4 @@ gem "bootstrap-sass", ">= 2.0.1"
 gem "will_paginate", ">= 3.0.3"
 gem "therubyracer", :group => :assets, :platform => :ruby
 gem "simple_form"
+gem "devise"
