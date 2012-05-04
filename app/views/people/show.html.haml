@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @person.user
+%p
+  %b Username:
+  = @person.username
+%p
+  %b Name:
+  = @person.name
+%p
+  %b Avatar:
+  = @person.avatar
+%p
+  %b Last checked:
+  = @person.last_checked
+
+= link_to 'Edit', edit_person_path(@person)
+\|
+= link_to 'Back', people_path
