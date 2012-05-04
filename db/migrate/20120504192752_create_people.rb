@@ -4,6 +4,8 @@ class CreatePeople < ActiveRecord::Migration
       t.references :user
       t.string :username
       t.string :name
+      t.string :description
+      t.string :location
       t.string :avatar
       t.datetime :last_checked
 
